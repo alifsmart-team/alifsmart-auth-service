@@ -5,3 +5,5 @@
 - User Management
 - Show Student Task on Dash
 - Profile Management Student & Parent
+- Student Dashboard
+- Parent Dashboard
