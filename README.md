@@ -1,6 +1,6 @@
 # alifsmart-auth-service
 
-# this service ran a function as :
+# function :
 - Registrasi & Login
 - Manajemen Role & Permission
 - 2FA
@@ -9,3 +9,6 @@
 # database :
 - users -> profil dasar, role
 - system_logs -> riwayat aktivitas
+
+# dashboard allocation :
+- Admin Dashboard
