@@ -1,9 +1,11 @@
-# alifsmart-user-service
+# alifsmart-auth-service
 
 # this service ran a function as :
-- Authenticate User
-- User Management
-- Show Student Task on Dash
-- Profile Management Student & Parent
-- Student Dashboard
-- Parent Dashboard
+- Registrasi & Login
+- Manajemen Role & Permission
+- 2FA
+- Pencatatan Audit Log
+
+# database :
+- users -> profil dasar, role
+- system_logs -> riwayat aktivitas
