@@ -6,7 +6,7 @@
 - 2FA
 - Pencatatan Audit Log
 
-# database :
+# tables :
 - users -> profil dasar, role
 - system_logs -> riwayat aktivitas
 
