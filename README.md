@@ -12,3 +12,4 @@
 
 # dashboard allocation :
 - Admin Dashboard
+- Login Dashboard
