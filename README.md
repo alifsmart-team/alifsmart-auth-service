@@ -11,5 +11,4 @@
 - system_logs -> riwayat aktivitas
 
 # dashboard allocation :
-- Admin Dashboard
 - Login Dashboard
