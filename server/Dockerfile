@@ -1,3 +1,4 @@
+# Backend Image
 # Gunakan Node.js sebagai base image
 FROM node:18-alpine
 

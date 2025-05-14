@@ -8,9 +8,9 @@ import { Pool } from 'pg';
 const pool = new Pool({
   user: process.env.DB_USER,
   host: process.env.DB_HOST,
-  database: process.env.DB_DATABASE,
+  database: process.env.DB_NAME,
   password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT || 5432,
+  port: process.env.DB_PORT,
 });
 
 // Inisialisasi Express dengan CORS
@@ -72,7 +72,7 @@ app.use((err, req, res, next) => {
 });
 
 // Start server
-const PORT = process.env.PORT;
+const PORT = process.env.SERVER_PORT;
 app.listen(PORT, async () => {
   console.log(`Server running on http://localhost:${PORT}`);
   

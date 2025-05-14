@@ -3,7 +3,6 @@
 # function :
 - Registrasi & Login
 - Manajemen Role & Permission
-- 2FA
 - Pencatatan Audit Log
 
 # tables :
