@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  alifsmart-auth-service:
+    image: vitoackerman/alifsmart-auth-service:latest # Ganti dengan image Anda
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - DB_USER=postgres # Ambil dari secrets atau env file di manager node
+      - DB_PASSWORD=naruto123
+      - DB_HOST=47.84.46.116 # Nama service database jika dalam stack yang sama
+      - DB_PORT=5432
+      - DB_NAME=alifsmartdb
+      - JWT_SECRET=eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTc0ODAxNjIzMiwiaWF0OjE3NDgwMTYyMzJ9.X9Jrbg0mvLT95D5nummfO8Bewrl4jdhMHKXwOP7wRYw
+      - JWT_EXPIRES_IN=1h
+    depends_on:
+      - alifsmartdb # Jika database di-deploy dalam stack yang sama
+    deploy:
+      replicas: 1 # Sesuaikan jumlah replika
+      restart_policy:
+        condition: on-failure
+      update_config:
+        parallelism: 1
+        delay: 10s
+    # volumes: # Jika ada persistent data khusus service ini
+    #   - auth_service_data:/app/data
+    # networks: # Jika menggunakan network kustom
+    #   - alifsmart_network
+
+# volumes:
+#   auth_service_data:
+
+# networks:
+#  alifsmart_network:
+#    external: true # Jika network sudah ada

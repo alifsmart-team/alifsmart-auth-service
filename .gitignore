@@ -1,27 +1,6 @@
-# Dependencies
 node_modules/
-
-# Environment
 .env
-*.env.local
-
-# Logs
-logs
+npm-debug.log
 *.log
-npm-debug.log*
-
-# Docker
-docker-compose.override.yml
-
-# IDE
-.vscode
-.idea
-
-# Build
-dist
-build
-.next
-
-# Misc
-.DS_Store
-*.swp
+dist/
+coverage/
