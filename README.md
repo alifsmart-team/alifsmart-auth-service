@@ -9,5 +9,4 @@
 - users -> profil dasar, role
 - system_logs -> riwayat aktivitas
 
-# dashboard allocation :
-- Login Dashboard
+
